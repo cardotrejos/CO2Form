@@ -34,6 +34,7 @@ npm start
 - [ ] Agregar docker containers and docker compose
 - [ ] Despliegue en AWS 
 - [ ] Algunas gráficas estadisticas
+- [ ] Mejoras en UI
 
 
 ## Supuestos

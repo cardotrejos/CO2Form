@@ -72,6 +72,7 @@ export const TablePage = () => {
     {
       title: 'kgCO2 por persona',
       dataIndex: 'CO2PerPerson',
+      render: totalC02 => totalC02.toFixed(2),
       sorter: (a, b) => a.CO2PerPerson - b.CO2PerPerson,
       width: '15%',
     },

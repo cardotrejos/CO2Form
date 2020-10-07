@@ -1,0 +1,32 @@
+version: '3'
+services:
+  mongo:
+    image: mongo:latest
+    ports:
+    - '27017:27017'    
+  server-api:
+    build:
+      context: ./Server
+      dockerfile: DockerFile
+    ports:
+      - '8080:8080'
+    links:
+      - mongo
+    restart: on-failure
+    container_name: server-api
+    volumes:
+      - /app/node_modules 
+      - ./server:/app 
+  client-app:
+    build:
+      context: ./Client
+      dockerfile: DockerFile
+    volumes:
+      - /app/node_modules
+      - ./client:/app
+    ports:
+      - '8081:80'
+    links:
+      - server-api
+    restart: on-failure
+    container_name: client-app
