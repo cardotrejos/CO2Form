@@ -4,7 +4,7 @@ import 'antd/dist/antd.css';
 import { Layout, Menu } from 'antd';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { FormPage } from './pages/FormPage'
-import { TablePage } from './pages/TablePage'
+import { TablePage } from './pages/Table/TablePage'
 import { Graphics } from './pages/Graphics';
 import { PlusCircleOutlined, TableOutlined, BarChartOutlined } from '@ant-design/icons';
 

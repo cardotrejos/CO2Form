@@ -31,7 +31,7 @@ npm start
 
 ## To do list
 
-- [ ] Agregar docker containers and docker compose
+- [X] Agregar docker containers and docker compose
 - [ ] Despliegue en AWS 
 - [ ] Algunas gráficas estadisticas
 - [ ] Mejoras en UI
