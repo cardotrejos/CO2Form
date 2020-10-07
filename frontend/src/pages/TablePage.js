@@ -79,6 +79,7 @@ export const TablePage = () => {
       title: 'CO2 Total',
       sorter: true,
       dataIndex: 'totalCO2',
+      render: totalC02 => totalC02.toFixed(2),
       sorter: (a, b) => a.totalCO2 - b.totalCO2,
       width: '10%',
     },
